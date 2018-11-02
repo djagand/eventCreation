@@ -1,7 +1,7 @@
 {
   "name": "event-creation",
   "version": "0.1.0",
-  "private": true,
+  "main": "index.js",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -24,6 +24,7 @@
     "type": "git",
     "url": "https://github.com/djagand/eventCreation.git"
   },
+  "license": "ISC",
   "scripts": {
     "preinstall": "npm install --prefix client",
     "start": "babel-node server",
