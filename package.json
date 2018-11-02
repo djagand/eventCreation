@@ -21,6 +21,7 @@
     "react-scripts": "1.1.5"
   },
   "scripts": {
+    "preinstall": "concurrently \"npm install --prefix client\" \"npm install\"",
     "start": "babel-node server",
     "build": "npm run build --prefix client",
     "test": "react-scripts test --env=jsdom",
