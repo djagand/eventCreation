@@ -20,8 +20,12 @@
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djagand/eventCreation.git"
+  },
   "scripts": {
-    "preinstall": "concurrently \"npm install --prefix client\" \"npm install\"",
+    "preinstall": "npm install --prefix client",
     "start": "babel-node server",
     "build": "npm run build --prefix client",
     "test": "react-scripts test --env=jsdom",
