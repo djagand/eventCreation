@@ -1,0 +1,35 @@
+{
+  "name": "event-creation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.3.0",
+    "http": "0.0.0",
+    "lodash": "^4.17.11",
+    "nodemon": "^1.18.5",
+    "path": "^0.12.7",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "babel-node server",
+    "build": "npm run build --prefix client",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "server": "nodemon --exec \"DEBUG=wfa-api:* babel-node server\"",
+    "client": "npm start --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
